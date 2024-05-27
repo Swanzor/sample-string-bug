@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "App",
+  "title": "Create Template Alpha Application",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "directory": {
+      "type": "string",
+      "title": "Directory",
+      "description": "A directory where the project is placed"
+    },
+    "title": {
+      "type": "string",
+      "title": "SEO Title",
+      "description": "Default website SEO title"
+    },
+    "description": {
+      "type": "string",
+      "title": "SEO description",
+      "description": "Default website SEO description"
+    },
+    "keywords": {
+      "type": "string",
+      "title": "SEO Keywords",
+      "description": "Default website SEO keywords"
+    },
+    "copyright": {
+      "type": "string",
+      "title": "Copyright",
+      "description": "Copyright of the company"
+    }
+  },
+  "required": ["name"]
+}

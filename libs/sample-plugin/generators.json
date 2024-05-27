@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "name": "template-alpha-tools",
+  "version": "0.0.1",
+  "generators": {
+    "app": {
+      "factory": "./src/generators/app/generator",
+      "schema": "./src/generators/app/schema.json",
+      "description": "Create an app using the Template Alpha base files"
+    }
+  }
+}

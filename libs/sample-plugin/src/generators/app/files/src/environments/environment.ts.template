@@ -1,0 +1,8 @@
+export const environment = {
+    production: false,
+    assets_url: '/assets',
+    title: '<%= title %>',
+    description: '<%= description %>',
+    keywords: '<%= keywords %>',
+    copy: '<%= copyright %>',
+};
